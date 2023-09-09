@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+body {
+  margin: 0 10%;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.generate-btn {
+  width: 100px;
+  height: 50px;
+  border: 2px solid #777;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.generate-disp {
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+
+.list-blk {
+  margin: 10px 5px 0;
+  padding: 10px 15px;
+  background-color: #eee;
+}
+
+.list-blk ul {
+  margin-top: 0;
+  font-size: 0.8rem;
+}

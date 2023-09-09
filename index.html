@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ランダム名前生成</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <h1>ランダム名前生成</h1>
+    <p class="description">コードネームに出てくる名前を{{ this.list.length }}個収録したリストの中からランダムに抽出した2つを合わせた言葉を生成
+    <div class="generate-blk">
+      <button class="generate-btn" v-on:click="generate()">生成</button>
+      <input class="generate-disp" readonly v-model="val" placeholder="ここに表示されます">
+    </div>
+
+    <div class="list-blk">
+      <details>
+        <summary class="list-title">収録単語リスト</summary>
+        <ul>
+          <li v-for="item of list">{{ item }}</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.3.4/dist/vue.global.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
